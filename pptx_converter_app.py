@@ -145,31 +145,6 @@ def safe_text_extraction(uploaded_file):
 st.title("🔒 Secure PPTX to Text Converter")
 st.markdown("**Professional document processing with built-in security**")
 
-# Security notice
-with st.expander("🛡️ Security & Privacy Information"):
-    st.markdown("""
-    **Security Features:**
-    - ✅ File type validation and structure verification
-    - ✅ Size limits (50MB maximum)
-    - ✅ Temporary processing (files deleted immediately)
-    - ✅ Content sanitization and limits
-    - ✅ HTTPS encryption for all data transmission
-    
-    **Privacy Commitment:**
-    - Files are processed temporarily and deleted immediately
-    - No permanent storage of your documents
-    - No logging of file contents
-    - Secure processing environment
-    
-    **Best Practices:**
-    - Only upload files you have permission to process
-    - Avoid highly confidential documents
-    - Check your organization's data policies
-    """)
-
-# Rate limiting notice
-st.info("⏱️ **Usage Limits**: For optimal performance, please limit to reasonable file sizes and avoid bulk processing")
-
 # File upload section
 st.subheader("📤 Upload Your PPTX File")
 
@@ -281,11 +256,36 @@ with st.expander("📖 How to Use This Tool"):
     - Complex formatting
     """)
 
+# Security notice
+with st.expander("🛡️ Security & Privacy Information"):
+    st.markdown("""
+    **Security Features:**
+    - ✅ File type validation and structure verification
+    - ✅ Size limits (50MB maximum)
+    - ✅ Temporary processing (files deleted immediately)
+    - ✅ Content sanitization and limits
+    - ✅ HTTPS encryption for all data transmission
+    
+    **Privacy Commitment:**
+    - Files are processed temporarily and deleted immediately
+    - No permanent storage of your documents
+    - No logging of file contents
+    - Secure processing environment
+    
+    **Best Practices:**
+    - Only upload files you have permission to process
+    - Avoid highly confidential documents
+    - Check your organization's data policies
+    """)
+
+# Rate limiting notice
+st.info("⏱️ **Usage Limits**: For optimal performance, please limit to reasonable file sizes and avoid bulk processing")
+
 # Footer
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666; font-size: 0.9em;'>
 🔒 <strong>Secure Document Processing</strong> • Built with enterprise security standards<br>
-No data retention • HTTPS encrypted • Open source security practices
+No data retention • HTTPS encrypted • Open source security practices • Build by Sharaz Ahamd
 </div>
 """, unsafe_allow_html=True)
